@@ -1,0 +1,9 @@
+{
+    "editor.fontLigatures": false,
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "files.associations": {
+        "*.css": "tailwindcss"
+    }
+}
