@@ -86,7 +86,7 @@ export default function Experince() {
                   mytech.map(({id , Image, name, color}) => {
                       return (
                           <div key={id} className='flex flex-col items-center justify-center py-2'>
-                              <Image className = { `${color} h-16 w-16  `  } />
+                              <Image className = { `${color} h-16 w-16  `  }  alt='skills' />
                               <h4 className='text-md md:text-2xl py-3' >{name}</h4>
                           </div>
                       )
