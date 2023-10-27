@@ -43,7 +43,7 @@ export default function FormPart() {
               <span className='border-b-4 border-b-teal-600 py-2'>Submit Your Message</span>
           </h3>
           <div className='flex items-center justify-center '>
-              {alert ? <div className='m-3 flex items-center justify-center bg-transparent bg-cyan-400 w-1/4 h-10  rounded-lg' > <h1 className='text-white text-2xl' >{status}</h1> </div> : ""}
+              {alert ? <div className='m-2 flex items-center justify-center bg-transparent bg-cyan-400 w-1/4 h-10  rounded-lg' > <h1 className='text-white text-2xl' >{status}</h1> </div> : ""}
           </div>
 
           <form onSubmit={submitForm} className='flex flex-col justify-center items-center my-10' >
