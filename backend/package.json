@@ -4,6 +4,7 @@
   "description": "this is the backend of my portfolio project",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/shyamg090/shyam-nextjs/issues"
   },
-  "homepage": "https://github.com/shyamg090/shyam-nextjs#readme"
+  "homepage": "https://github.com/shyamg090/shyam-nextjs#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.6.3"
+  }
 }
