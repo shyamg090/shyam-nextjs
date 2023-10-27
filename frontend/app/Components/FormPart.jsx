@@ -14,7 +14,7 @@ export default function FormPart() {
 
         return (
             await setmessage((prev) => {
-                axios.post("http://localhost:3002/form", {
+                axios.post("https://porfolio-backend-h1og.onrender.com/form", {
                     ...prev, name: e.target.name.value,
                     email: e.target.email.value, phone: e.target.phone.value,
                     msg: e.target.msg.value
