@@ -18,12 +18,13 @@ import Design from './Components/Design';
 import { Navbar } from './Components/Navbar';
 import { Footer } from './Components/Footer';
 import { Hero } from './Components/Hero';
+import Work from './Components/Work';
 
 
 export default function Home() {
   const [darkmode, setdarkmode] = useState(false);
 
-  console.log(darkmode);
+  // console.log(darkmode);
 
   return (
     <div className={darkmode ? "dark" : ""} >
@@ -37,6 +38,7 @@ export default function Home() {
         </section>
         <Aboutme />
         <Experince />
+        <Work/>
         <Projects />
         <FormPart />
       </main>

@@ -17,7 +17,8 @@ module.exports = {
       animation: {
         // Bounces 5 times 1s equals 5 seconds
         'bounce-short': 'bounce 3s ease-in-out infinite',
-        'spin-slow': 'spin 150s linear infinite',
+        'spin-slow': 'spin 120s linear infinite',
+        'spin-fast': 'spin 70s linear infinite'
       }
     },
   },
