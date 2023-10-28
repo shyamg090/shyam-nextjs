@@ -53,10 +53,10 @@ export default function Projects() {
         {
           myProject.map(({ id, image, name, desc, link, github }) => {
             return (
-              <div key={id} className='flex flex-col justify-center items-center my-5 mx-2 md:m-5 shadow-md shadow-teal-300 rounded-lg' >
+              <div key={id} className='flex flex-col justify-center items-center my-5 mx-2 md:m-5 shadow-md shadow-teal-300 rounded-lg  md:transition ease-in-out delay-150 mg:hover:-translate-y-1 md:hover:scale-105 duration-300 md:hover:shadow-green-400 ' >
                 <h2 className='p-3 text-2xl' >{name}</h2>
                 <Image src={image} alt="project"
-                  className="rounded-lg object-cover w-full p-2 "
+                  className="rounded-lg object-cover w-full p-2"
                 />
                 <p className='py-1 px-3 text-center' >{desc}</p>
                 <div className='flex items-center justify-evenly m-4 p-1 w-full' >

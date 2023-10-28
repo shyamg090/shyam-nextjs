@@ -11,7 +11,7 @@ export const Navbar = () => {
               </li> */}
               <li>
                   <a className='bg-gradient-to-r from-cyan-300 to-teal-500 p-3 ml-3 rounded-lg '
-                      href='/Shyam_G_dev_25_10.pdf' target='_blank' download={true} rel="noreferrer"
+                      href='https://www.dropbox.com/scl/fi/zzs4ax3ujqgxfcmlkpqi5/Shyam_G_dev_25_10.pdf?rlkey=99di9qy95th72mjvmvnl6j81j&dl=0' target='_blank' download={true} rel="noreferrer"
                   >
                       Resume</a>
               </li>
