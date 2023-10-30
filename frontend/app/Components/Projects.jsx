@@ -45,28 +45,32 @@ export default function Projects() {
   ]
 
   return (
-    <div>
+    <div className='my-6'>
       <h3 className='text-2xl md:text-3-xl text-center mt-10 py-4 '>
         <span className='border-b-4 border-b-teal-600 py-2'>My Projects</span> 
       </h3>
-      <div className='grid grid-col-1 md:grid-cols-2 flex-col  md:m-10 ' >
+      {/* <div className='grid grid-col-1 md:grid-cols-2 flex-col  md:m-10 ' > */}
         {
           myProject.map(({ id, image, name, desc, link, github }) => {
             return (
-              <div key={id} className='flex flex-col justify-center items-center my-5 mx-2 md:m-5 shadow-md shadow-teal-300 rounded-lg  md:transition ease-in-out delay-150 mg:hover:-translate-y-1 md:hover:scale-105 duration-300 md:hover:shadow-green-400 ' >
-                <h2 className='p-3 text-2xl' >{name}</h2>
-                <Image src={image} alt="project"
-                  className="rounded-lg object-cover w-full p-2"
-                />
-                <p className='py-1 px-3 text-center' >{desc}</p>
-                <div className='flex items-center justify-evenly m-4 p-1 w-full' >
-                  <a href={link} ><HiLink className='w-8 h-8 hover:text-teal-600' /></a>
-                  <a href={github}><PiGithubLogoFill className='w-8 h-8 hover:text-teal-600'/></a>
+              <div key={id} className=' flex flex-col md:grid md:grid-cols-2 my-5 md:mx-20 shadow-md shadow-teal-300 rounded-lg  md:transition ease-in-out delay-150 mg:hover:-translate-y-1 duration-300 md:hover:shadow-green-400 ' >
+                <div className='flex flex-col items-center justify-center'>
+                  <h2 className='text-2xl p-3' >{name}</h2>
+                  <Image src={image} alt="project"
+                    className="rounded-lg w-inherit h-inherit p-1 md:p-2"
+                  />
+                </div>
+                <div className='flex flex-col items-center justify-around' >
+                  <p className='p-3 text-md md:text-xl' >{desc}</p>
+                  <div className='flex items-center justify-evenly m-4 p-1 w-inherit' >
+                    <a href={link} ><HiLink className='w-8 h-8 hover:text-teal-600 mx-10' /></a>
+                    <a href={github}><PiGithubLogoFill className='w-8 h-8 hover:text-teal-600 mx-10' /></a>
+                  </div>
                 </div>
               </div>
             )
           })}
-      </div>
+      {/* </div> */}
       
     </div>
   )
