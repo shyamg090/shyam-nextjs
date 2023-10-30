@@ -1081,6 +1081,11 @@ video {
   color: rgb(19 78 74 / var(--tw-text-opacity));
 }
 
+.text-teal-600 {
+  --tw-text-opacity: 1;
+  color: rgb(13 148 136 / var(--tw-text-opacity));
+}
+
 .placeholder-teal-800::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(17 94 89 / var(--tw-placeholder-opacity));
@@ -1097,6 +1102,10 @@ video {
 
 .opacity-75 {
   opacity: 0.75;
+}
+
+.opacity-5 {
+  opacity: 0.05;
 }
 
 .shadow-md {
